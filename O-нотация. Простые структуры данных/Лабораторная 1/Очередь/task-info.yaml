@@ -11,7 +11,7 @@ files:
       offset: 204
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '...'
   - offset: 418
     length: 37
@@ -21,7 +21,7 @@ files:
       offset: 418
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '...'
   - offset: 679
     length: 37
@@ -31,7 +31,7 @@ files:
       offset: 679
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '...'
   - offset: 1198
     length: 34
@@ -41,7 +41,7 @@ files:
       offset: 1198
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '...'
   - offset: 1304
     length: 35
@@ -51,7 +51,7 @@ files:
       offset: 1304
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '...'
   - offset: 1420
     length: 37
@@ -61,7 +61,7 @@ files:
       offset: 1420
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: '...'
   text: |
     """
@@ -199,6 +199,9 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error
+  time: Wed, 01 Mar 2023 16:40:59 UTC
 record: -1
 solution_hidden: false

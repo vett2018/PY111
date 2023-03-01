@@ -11,7 +11,7 @@ files:
       offset: 263
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: self._stack.append(elem)
   - offset: 514
     length: 36
@@ -21,7 +21,7 @@ files:
       offset: 514
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       if not self._stack:
                   raise IndexError("Извлечение из пустого стека не возможно")
@@ -35,7 +35,7 @@ files:
       offset: 1022
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       if not isinstance(ind, int):
                   raise TypeError(f"Индекс должен быть целочисленного типа, а не {type(ind).__name__}")
@@ -53,7 +53,7 @@ files:
       offset: 1129
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: self._stack.clear()
   - offset: 1253
     length: 40
@@ -63,7 +63,7 @@ files:
       offset: 1253
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: return len(self._stack)
   text: |
     from typing import Any
@@ -206,5 +206,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error
+  time: Wed, 01 Mar 2023 16:41:46 UTC
 record: -1

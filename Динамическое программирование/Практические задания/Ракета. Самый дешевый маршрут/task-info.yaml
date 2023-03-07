@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 355
-    length: 526
+    length: 525
     placeholder_text: '...  # TODO рассчитать таблицу стоимостей перемещений'
     initial_state:
       length: 53

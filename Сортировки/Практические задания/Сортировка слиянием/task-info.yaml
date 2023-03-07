@@ -1,16 +1,56 @@
 type: edu
 files:
+- name: tests/test_task.py
+  visible: false
+  text: |
+    import unittest
+    import random
+
+    from task import sort
+
+
+    class TestCase(unittest.TestCase):
+        def test_sorted(self):
+            arr = [random.randint(-100, 100) for _ in range(30)]
+            self.assertEqual(
+                sorted(arr), sort(arr),
+                msg="Последовательность не отсортировалась"
+            )
+
+        def test_sort_empty_seq(self):
+            empty_arr = []
+            self.assertEqual(
+                empty_arr, sort(empty_arr),
+                msg="Пустая последовательность должна сортироваться :)"
+            )
+
+        def test_sort_one_item(self):
+            one_item_seq = [1]
+            self.assertEqual(
+                one_item_seq, sort(one_item_seq),
+                msg="Почему-то не отсортировалась последовательность из одного элемента :("
+            )
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/__init__.py
+  visible: false
+  learner_created: false
+- name: merge_sort.gif
+  visible: true
+  learner_created: false
 - name: task.py
   visible: true
   placeholders:
   - offset: 458
-    length: 42
+    length: 39
     placeholder_text: '...  # TODO реализуйте сортировку слиянием'
     initial_state:
       length: 42
       offset: 458
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       if not container:
@@ -74,46 +114,6 @@ files:
         :return: Отсортированный в порядке возрастания массив
         """
         ...  # TODO реализуйте сортировку слиянием
-  learner_created: false
-- name: tests/test_task.py
-  visible: false
-  text: |
-    import unittest
-    import random
-
-    from task import sort
-
-
-    class TestCase(unittest.TestCase):
-        def test_sorted(self):
-            arr = [random.randint(-100, 100) for _ in range(30)]
-            self.assertEqual(
-                sorted(arr), sort(arr),
-                msg="Последовательность не отсортировалась"
-            )
-
-        def test_sort_empty_seq(self):
-            empty_arr = []
-            self.assertEqual(
-                empty_arr, sort(empty_arr),
-                msg="Пустая последовательность должна сортироваться :)"
-            )
-
-        def test_sort_one_item(self):
-            one_item_seq = [1]
-            self.assertEqual(
-                one_item_seq, sort(one_item_seq),
-                msg="Почему-то не отсортировалась последовательность из одного элемента :("
-            )
-  learner_created: false
-- name: __init__.py
-  visible: false
-  learner_created: false
-- name: tests/__init__.py
-  visible: false
-  learner_created: false
-- name: merge_sort.gif
-  visible: true
   learner_created: false
 status: Unchecked
 record: -1

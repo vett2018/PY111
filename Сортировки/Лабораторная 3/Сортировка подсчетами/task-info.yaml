@@ -1,35 +1,5 @@
 type: edu
 files:
-- name: task.py
-  visible: true
-  placeholders:
-  - offset: 486
-    length: 54
-    placeholder_text: '...  # TODO реализовать алгоритм сортировки подсчетами'
-    initial_state:
-      length: 54
-      offset: 486
-    initialized_from_dependency: false
-    selected: false
-    status: Unchecked
-    encrypted_possible_answer: '...'
-  text: |
-    from typing import Sequence
-
-
-    def sort(container: Sequence[int]) -> Sequence[int]:
-        """
-        Сортировка подсчетами
-
-        1. Определите максимальное значение в массиве и заполните вспомогательный массив с подсчетом количества элементов.
-        2. Посчитайте количество каждого объекта
-        3. Зная количество каждого объекта, восстановите отсортированный массив
-
-        :param container: Массив, который надо отсортировать
-        :return: Отсортированный в порядке возрастания массив
-        """
-        ...  # TODO реализовать алгоритм сортировки подсчетами
-  learner_created: false
 - name: tests/test_task.py
   visible: false
   text: |
@@ -70,5 +40,158 @@ files:
 - name: counting_sort.gif
   visible: true
   learner_created: false
-status: Unchecked
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 650
+    length: 50
+    placeholder_text: '...  # TODO реализовать алгоритм сортировки подсчетами'
+    initial_state:
+      length: 54
+      offset: 486
+    initialized_from_dependency: false
+    selected: true
+    status: Failed
+    encrypted_possible_answer: '...'
+  text: |
+    from typing import Sequence
+
+
+    def sort(container: Sequence[int]) -> Sequence[int]:
+        """
+        Сортировка подсчетами
+
+        1. Определите максимальное значение в массиве и заполните вспомогательный массив с подсчетом количества элементов.
+        2. Посчитайте количество каждого объекта
+        3. Зная количество каждого объекта, восстановите отсортированный массив
+
+        :param container: Массив, который надо отсортировать
+        :return: Отсортированный в порядке возрастания массив
+        """
+        ...  # TODO реализовать алгоритм сортировки подсчетами
+  learner_created: false
+status: Failed
+feedback:
+  message: 'Lists differ: [0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3,[119
+    chars], 10] != [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,[115 chars]0,
+    0]'
+  time: Wed, 01 Mar 2023 17:21:48 UTC
+  expected: |-
+    [0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     3,
+     3,
+     3,
+     3,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     5,
+     5,
+     5,
+     5,
+     6,
+     6,
+     6,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     9,
+     9,
+     9,
+     9,
+     9,
+     10,
+     10,
+     10,
+     10]
+  actual: |-
+    [0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0]
 record: -1

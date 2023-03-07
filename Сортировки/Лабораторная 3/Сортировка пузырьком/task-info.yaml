@@ -40,6 +40,9 @@ files:
 - name: bubble_sort.gif
   visible: true
   learner_created: false
+- name: main.py
+  visible: true
+  learner_created: true
 - name: task.py
   visible: true
   placeholders:
@@ -71,9 +74,6 @@ files:
         """
         ...  # TODO реализовать алгоритм сортировки пузырьком
   learner_created: false
-- name: main.py
-  visible: true
-  learner_created: true
 status: Solved
 feedback:
   message: Congratulations!

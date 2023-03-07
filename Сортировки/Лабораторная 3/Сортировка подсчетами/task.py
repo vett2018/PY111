@@ -12,4 +12,26 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     :param container: Массив, который надо отсортировать
     :return: Отсортированный в порядке возрастания массив
     """
-    ...  # TODO реализовать алгоритм сортировки подсчетами
+     # Сортировка для множества повторяющихся чисел
+    # сортировка составляет пустой список о колличестве повторений сохраняется номер и соответсвенно само число
+     # TODO реализовать алгоритм сортировки подсчетами
+    # найти сначала максимальный
+    if not container:
+        return  container
+    maximum = max(container)
+    counts = [0] * (maximum + 1)
+    #print(counts)
+    for value in container:
+        counts[value] = counts[value] + 1
+        #print(counts, '\n')
+    result = []
+    for index, count in enumerate(counts):
+        result = result + [index] * count
+    #print(result, '\n')
+    #print(result)
+    return counts, result
+
+
+
+mas = [4, 4, 4, 4, 4, 9, 9, 7, 3, 3, 3 ]
+print(sort(mas))

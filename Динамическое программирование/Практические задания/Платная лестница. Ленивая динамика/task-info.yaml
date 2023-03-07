@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 481
-    length: 441
+    length: 599
     placeholder_text: '...  # TODO реализовать ленивую динамику'
     initial_state:
       length: 40
       offset: 481
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |-
       @lru_cache
           def lazy_method(stairway, n):
@@ -85,11 +85,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: '10 != None : Лестница с одной ступенью тоже лестница. Выбор не велик,
-    просто наступаем на эту ступень'
-  time: Tue, 07 Mar 2023 15:43:41 UTC
-  expected: 10
-  actual: None
+  message: Congratulations!
+  time: Tue, 07 Mar 2023 16:22:18 UTC
 record: -1

@@ -24,13 +24,16 @@ def sort(container: Sequence[int], asc: bool = True) -> Sequence[int]:
             if compare(container[i], container[i+1]):
                 container[i], container[i+1] = container[i+1], container[i]
                 change = True
-            if not change: # if change is False
-                break
+        if not change: # if change is False
+            break
         offset += 1
     return container
 
 _set = [25, 6, 5, 99, 3, 2, 1, 0]
 sop = [99, 3, 2, 1, 0, 25, 6, 5]
-#print(sort(_set, True))
+print(sort(_set, True))
 print(sort(sop, False))
+
+
+
 

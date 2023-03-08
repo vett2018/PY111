@@ -28,8 +28,8 @@ class Stack:
         """
         if not self._stack: #если стек не пустой
             raise IndexError("Стек пустой")
-        self._stack.pop()
         self._len -= 1
+        return self._stack.pop()
        # не любой элемент мы можем извлеч с конца
 
     def peek(self, ind: int = 0) -> Any: #передаем индекс элемента который у нас есть
@@ -53,8 +53,8 @@ class Stack:
         #if not 0 <= ind <= self._len
             raise IndexError("Индекс вне границ стека")
 
-        invertirovaniy_index = -1 -ind
-        return self._stack(invertirovaniy_index)
+        invertirovaniy_index = -1 - ind
+        return self._stack[invertirovaniy_index]
 
 
     def clear(self) -> None:
@@ -72,3 +72,15 @@ class Stack:
         print("Зашли в len")
         # returnt len() #базовая хитрость
         return self._len #ПЕРЕОПРЕДЕЛЕНИЕ СВОЕЙ СТРУКТУРЫ
+
+if __name__ =='__main__':
+    s = Stack()
+    s.clear()
+    s.push(1)
+    s.push(2)
+    s.push(3)
+    print(s._stack)
+    print(s.pop())
+    print(s._stack)
+    print(s.peek())
+    print(s.peek(1))

@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 614
-    length: 49
+    length: 1144
     placeholder_text: '...  # TODO реализовать алгоритм бинарного поиска'
     initial_state:
       length: 49
       offset: 614
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if right_border is None:
               right_border = len(seq) - 1
@@ -137,5 +137,8 @@ files:
 - name: binary_search.gif
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 08 Mar 2023 19:56:42 UTC
 record: -1

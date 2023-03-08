@@ -3,14 +3,14 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 269
-    length: 44
+  - offset: 279
+    length: 285
     placeholder_text: '...  # TODO реализовать рекурсивный алгоритм'
     initial_state:
       length: 44
       offset: 269
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       if n < 0:
@@ -63,5 +63,8 @@ files:
 - name: img.png
   visible: true
   learner_created: false
+- name: cash_recursuve_fib.py
+  visible: true
+  learner_created: true
 status: Unchecked
 record: -1

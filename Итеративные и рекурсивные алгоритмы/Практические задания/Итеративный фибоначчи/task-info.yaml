@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 269
-    length: 57
+    length: 345
     placeholder_text: '...  # TODO написать итеративный алгоритм чисел Фибоначчи'
     initial_state:
       length: 57
       offset: 269
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if n < 0:
               raise ValueError("Номер числа Фибоначчи должен быть не отрицательным числом")
@@ -65,5 +65,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 08 Mar 2023 18:40:29 UTC
 record: -1

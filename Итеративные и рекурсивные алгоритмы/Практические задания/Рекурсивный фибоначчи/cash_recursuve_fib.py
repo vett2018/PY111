@@ -1,4 +1,8 @@
+from functools import cache, lru_cache
+
 count = 0
+
+@lru_cache()
 def fib_recursive(n: int) -> int:
     """
     Вычислить n-е число последовательности Фибоначчи, используя рекурсивный алгоритм.
@@ -20,9 +24,9 @@ def fib_recursive(n: int) -> int:
     return fib_recursive(n-1) + fib_recursive(n-2) # o(2^n)
 
 if __name__ == '__main__':
-    for i in range(26):
+    for i in range(100):
         count = 0
-        print(f'i = {i}, res = {fib_recursive(i)}, c = {count},n^2 = { i ** 2}, n^4 = {i ** 4}, 2^n = {2 ** i}')
+        print(f'i = {i}, res = {fib_recursive(i)}, c = {count},n^2 = {i ** 2}, n^4 = {i ** 4}, 2^n = {2 ** i}')
     # count = 0
     # print(fib_recursive(2))
     # print(count)

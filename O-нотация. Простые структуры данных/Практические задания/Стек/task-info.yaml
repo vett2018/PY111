@@ -28,7 +28,7 @@ files:
 
               return self._stack.pop()
   - offset: 1546
-    length: 541
+    length: 534
     placeholder_text: '...  # TODO реализовать операцию peek'
     initial_state:
       length: 37
@@ -45,7 +45,7 @@ files:
 
               inv_ind = -1 - ind
               return self._stack[inv_ind]
-  - offset: 2166
+  - offset: 2159
     length: 299
     placeholder_text: '...  # TODO реализовать операцию clear'
     initial_state:
@@ -55,7 +55,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: self._stack.clear()
-  - offset: 2561
+  - offset: 2554
     length: 154
     placeholder_text: '...  # TODO реализовать операцию __len__'
     initial_state:
@@ -206,6 +206,9 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
+- name: dict.py
+  visible: true
+  learner_created: true
 status: Solved
 feedback:
   message: Congratulations!

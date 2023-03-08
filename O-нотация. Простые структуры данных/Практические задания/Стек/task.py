@@ -48,7 +48,7 @@ class Stack:
             raise TypeError("Индекс не целый")
 
         #проверка индекса лежит ли он в границах стека между нулем и длиной нашего элемента
-        if not 0 <= ind <= len(self._stack):
+        if not 0 <= ind <= len(self):
         #if not 0 <= ind <= self._stack.__len__(): #аналогично работа с объектами
         #if not 0 <= ind <= self._len
             raise IndexError("Индекс вне границ стека")
@@ -73,7 +73,7 @@ class Stack:
         # returnt len() #базовая хитрость
         return self._len #ПЕРЕОПРЕДЕЛЕНИЕ СВОЕЙ СТРУКТУРЫ
 
-if __name__ =='__main__':
+if __name__ == '__main__':
     s = Stack()
     s.clear()
     s.push(1)
